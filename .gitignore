@@ -41,3 +41,4 @@ build/
 .gradle/
 
 node_modules/
+bower_components/

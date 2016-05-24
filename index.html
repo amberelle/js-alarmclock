@@ -1,27 +1,25 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-    <script type="text/javascript" src="build/js/app.js"></script>
-    <script type="text/javascript" src="build/js/vendor.min.js"></script> -->
-    <link rel="stylesheet" href="build/css/vendor.css">
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/moment/min/moment.min.js"></script>
     <script src="build/js/vendor.min.js"></script>
     <script type="text/javascript" src="build/js/app.js"></script>
+    <link rel="stylesheet" href="build/css/vendor.css">
     <title>AlarmClock</title>
   </head>
   <body>
-    <h1>Current time</h1>
-    <h1 id="clock"></h1>
-    <form id="alarmClock">
-      <label for="alarm">Set alarm time:</label>
-      <input id="alarmTime" type="time" class="form-control">
-      <button type="submit" class="btn btn-primary">Add alarm time:</button>
-    </form>
-      <input id="body" type="text">
-      <button type="submit">Submit</button>
-    </form>
+    <div class="container">
+      <h1>Current time</h1>
+      <h1 id="clock"></h1>
+      <form id="alarmClock">
+        <label for="alarm">Set alarm time:</label>
+        <input id="addAlarm" type="time" class="form-control">
+        <button type="submit" class="btn btn-lg btn-success">Add alarm time</button>
+      </form>
 
-    <h2>Current Alarms</h2>
-    <ul class="list-group" id="allAlarms"></ul>
+      <h2>Current Alarms</h2>
+      <ul class="list-group" id="allAlarms"></ul>
+  </div>
   </body>
 </html>

@@ -1,4 +1,5 @@
-// var update = require('./../js/update.js').update;
+var soundAlarm = require('./../js/alarm.js').soundAlarm;
+
 
 function displayTime() {
     var time = moment().format('LT');
